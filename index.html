@@ -175,7 +175,7 @@
     .hero-baggrund {
       position: absolute;
       inset: 0;
-      background-image: url('Image5.jpeg');
+      background-image: url('image5.jpeg');
       background-size: cover;
       background-position: center;
       transform: scale(1.15);
@@ -1305,7 +1305,7 @@
   ================================ -->
 
   <div class="parallax-stribe">
-    <div class="baggrund" id="parallax-1" style="background-image: url('Image4.jpeg');"></div>
+    <div class="baggrund" id="parallax-1" style="background-image: url('image4.jpeg');"></div>
     <div class="lag venstre">
       <div class="parallax-tekst vis-ved-scroll">
         <h2>Madspild er en klimakrise</h2>
@@ -1325,23 +1325,23 @@
 
     <div class="mosaik">
       <div class="mosaik-celle stor vis-ved-scroll forsinkelse-1">
-        <img src="Image5.jpeg" alt="Madspild bunke" />
+        <img src="image5.jpeg" alt="Madspild bunke" />
         <div class="billedtekst">Millioner af tons mad smides ud hvert år</div>
       </div>
       <div class="mosaik-celle vis-ved-scroll forsinkelse-2">
-        <img src="Image6.jpeg" alt="Grøntsagskasser" />
+        <img src="image6.jpeg" alt="Grøntsagskasser" />
         <div class="billedtekst">Overskudsmad kan reddes</div>
       </div>
       <div class="mosaik-celle vis-ved-scroll forsinkelse-3">
-        <img src="Image8.jpeg" alt="Supermarked" />
+        <img src="image8.jpeg" alt="Supermarked" />
         <div class="billedtekst">Supermarkeder kasserer tusindvis af tons</div>
       </div>
       <div class="mosaik-celle vis-ved-scroll forsinkelse-2">
-        <img src="Image7.jpeg" alt="Kompost" />
+        <img src="image7.jpeg" alt="Kompost" />
         <div class="billedtekst">Kompostering – en del af løsningen</div>
       </div>
       <div class="mosaik-celle vis-ved-scroll forsinkelse-3">
-        <img src="Image9.jpeg" alt="Friske grøntsager" />
+        <img src="image9.jpeg" alt="Friske grøntsager" />
         <div class="billedtekst">Frisk mad fortjener en chance</div>
       </div>
     </div>
@@ -1416,7 +1416,7 @@
   ================================ -->
 
   <div class="billede-skillelinje">
-    <div class="baggrund" id="parallax-3" style="background-image: url('Image9.jpeg');"></div>
+    <div class="baggrund" id="parallax-3" style="background-image: url('image9.jpeg');"></div>
   </div>
 
 
@@ -1496,7 +1496,7 @@
   ================================ -->
 
   <div class="parallax-stribe">
-    <div class="baggrund" id="parallax-2" style="background-image: url('Image6.jpeg');"></div>
+    <div class="baggrund" id="parallax-2" style="background-image: url('image6.jpeg');"></div>
     <div class="lag hoejre">
       <div class="parallax-tekst vis-ved-scroll" style="text-align: right;">
         <h2>Reddede grøntsager er bedre grøntsager</h2>
@@ -1612,9 +1612,9 @@
       </div>
 
       <div class="billede-grid vis-ved-scroll forsinkelse-2">
-        <img src="Image6.jpeg" alt="Overskudsmad" />
-        <img src="Image7.jpeg" alt="Kompostering" />
-        <img src="Image8.jpeg" alt="Supermarked" />
+        <img src="image6.jpeg" alt="Overskudsmad" />
+        <img src="image7.jpeg" alt="Kompostering" />
+        <img src="image8.jpeg" alt="Supermarked" />
       </div>
     </div>
   </section>
@@ -1636,7 +1636,7 @@
         <div class="kontakt-info">
           <h3>Vi er her for dig</h3>
           <p>Uanset om du vil vide mere, bidrage aktivt eller blot dele dine tanker – skriv til os.</p>
-          <div class="kontakt-detalje"><div class="kontakt-ikon">✉️</div> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6c0409062c1f18031c010d081f1c050008420219">[email&#160;protected]</a></div>
+          <div class="kontakt-detalje"><div class="kontakt-ikon">✉️</div> hej@stopmadspild.nu</div>
           <div class="kontakt-detalje"><div class="kontakt-ikon">📍</div> København, Danmark</div>
           <div class="kontakt-detalje"><div class="kontakt-ikon">🌐</div> stopmadspild.nu</div>
         </div>
@@ -1725,7 +1725,7 @@
 
     // Hero parallax – billedet bevæger sig langsommere end siden
     const heroBaggrund = document.getElementById('hero-baggrund');
-    heroBaggrund.style.backgroundImage = "url('Image5.jpeg')";
+    heroBaggrund.style.backgroundImage = "url('image5.jpeg')";
 
     window.addEventListener('scroll', function() {
       if (window.innerWidth > 600) {
@@ -1804,3 +1804,17 @@
         antalUnderskrifter.toLocaleString('da-DK');
       document.getElementById('underskrift-success').style.display = 'block';
       event.target.reset();
+    }
+
+
+    // Kontaktformular
+    function send_besked(event) {
+      event.preventDefault();
+      document.getElementById('kontakt-success').style.display = 'block';
+      event.target.reset();
+    }
+
+  </script>
+
+</body>
+</html>
